@@ -8,14 +8,65 @@ body {
 }
 .main {
   flex: 1;
+  position: relative;
 }
 
 h1 {
   font-size: 5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+p {
+  font-size: 1.5rem;
 }
 
 footer {
   text-align: right;
   color: midnightblue;
 }
+#creative {
+  color: purple;
+}
+.card {
+  display: inline-block;
+  padding: 10px;
+  width: 45%;
+  background-color: rgb(209, 220, 231);
+}
 
+.card img {
+  height: 200px;
+  width: 200px;
+  float: left;
+  padding: 30px;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+@media (max-width: 680px) {
+  .logo {
+    width: 100px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .card {
+    width: 300px;
+    display: block;
+    text-align: justify;
+  }
+  .right {
+    float: left;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 1039px) and (min-width: 681px) {
+  .card {
+    text-align: justify;
+  }
+}
